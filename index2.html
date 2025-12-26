@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Trang Web Sinh Nhật Crush</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Dancing+Script:wght@700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ee2b6c",
+              "background-light": "#f8f6f6",
+              "background-dark": "#221016",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+              script: ["Dancing Script", "cursive"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-[#1b0d12] dark:text-gray-100 font-display transition-colors duration-200"
+  >
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden"
+    >
+      <!-- Navigation -->
+      <header
+        class="sticky top-0 z-50 w-full backdrop-blur-md bg-background-light/80 dark:bg-background-dark/80 border-b border-[#f3e7eb] dark:border-gray-800"
+      >
+        <div class="px-4 md:px-10 py-3 flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <div class="size-8 flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-3xl">cake</span>
+            </div>
+            <h2
+              class="text-primary text-xl font-bold leading-tight tracking-[-0.015em] font-script"
+            >
+              Happy Birthday
+            </h2>
+          </div>
+          <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+            <nav class="flex items-center gap-9">
+              <a
+                class="text-sm font-medium hover:text-primary transition-colors"
+                href="#"
+                >Trang Chủ</a
+              >
+              <a
+                class="text-sm font-medium hover:text-primary transition-colors"
+                href="#memories"
+                >Kỷ Niệm</a
+              >
+              <a
+                class="text-sm font-medium hover:text-primary transition-colors"
+                href="#wishes"
+                >Lời Chúc</a
+              >
+            </nav>
+            <button
+              class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/30 hover:bg-primary/90 transition-all"
+            >
+              <span class="truncate">Gửi Quà</span>
+            </button>
+          </div>
+          <!-- Mobile Menu Icon -->
+          <div class="md:hidden text-[#1b0d12] dark:text-white">
+            <span class="material-symbols-outlined">menu</span>
+          </div>
+        </div>
+      </header>
+      <!-- Hero Section -->
+      <section
+        class="relative w-full py-6 md:py-12 px-4 md:px-10 flex justify-center"
+      >
+        <div class="max-w-[1200px] w-full">
+          <div
+            class="relative overflow-hidden rounded-2xl min-h-[500px] md:min-h-[600px] flex flex-col items-center justify-center text-center p-6 md:p-12 gap-8 shadow-2xl group"
+          >
+            <!-- Background Image -->
+            <div
+              class="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+              data-alt="Happy birthday party background with confetti and pink balloons"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.3),
+                    rgba(0, 0, 0, 0.6)
+                  ),
+                  url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbHSvXthBp6BD8hGN1WADr7LSasspgENJpj6_oDxG2LsCOypO48MW4KQUN-3PKAwTk2a9aNv6G6SeTy_vgyqCvMmRSJnlcVBzjmJs35cmQV8vrTiLGTbURbotQl8QRMmIRf7k1z6rFy4V93mVgRdoqTZ0WoZPOslwoq_fhPo9_JGst99mW5YTdxH82JwiYAXyaJeCq-odF1ed9iTl_ZTTC75bk8bRwFGCEXpJAxxxaoLDlZbBKnIWFKnQryidD78d2I57tnykj9Upk');
+              "
+            ></div>
+            <div
+              class="relative z-10 flex flex-col items-center gap-4 max-w-3xl"
+            >
+              <div
+                class="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white text-sm font-medium mb-2"
+              >
+                ✨ Ngày đặc biệt của người đặc biệt
+              </div>
+              <h1
+                class="text-white text-5xl md:text-7xl font-bold leading-tight tracking-tight font-script drop-shadow-lg"
+              >
+                Chúc Mừng Sinh Nhật<br /><span
+                  class="text-primary-300 text-[#ff8fa3]"
+                  >Chị Hải Phương</span
+                >
+              </h1>
+              <p
+                class="text-gray-100 text-lg md:text-xl font-medium max-w-xl drop-shadow-md mt-2"
+              >
+                Mong rằng tuổi mới của chị sẽ luôn rực rỡ, bình yên và nhận được
+                thật nhiều yêu thương – những điều xứng đáng với một người tuyệt
+                vời như chị 🎂✨
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 mt-6">
+                <button
+                  class="h-12 px-8 rounded-full bg-primary text-white font-bold text-base shadow-xl shadow-primary/40 hover:scale-105 transition-transform flex items-center gap-2"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >favorite</span
+                  >
+                  Khám Phá Bất Ngờ
+                </button>
+                <button
+                  class="h-12 px-8 rounded-full bg-white/10 backdrop-blur-md border border-white/40 text-white font-bold text-base hover:bg-white/20 transition-colors"
+                >
+                  Xem Video
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Timer Section -->
+      <section
+        class="w-full px-4 md:px-10 pb-12 flex justify-center -mt-8 relative z-20"
+      >
+        <div class="max-w-[960px] w-full">
+          <div
+            class="bg-white dark:bg-[#2d1b22] rounded-xl shadow-xl border border-[#f3e7eb] dark:border-gray-800 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6"
+          >
+            <div class="flex flex-col gap-1 text-center md:text-left">
+              <h3 class="text-lg font-bold dark:text-white">
+                Đếm ngược khoảnh khắc
+              </h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                Thời gian đến bữa tiệc sinh nhật!
+              </p>
+            </div>
+            <div class="flex gap-3 md:gap-6">
+              <div class="flex flex-col items-center gap-2">
+                <div
+                  class="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center rounded-lg bg-[#f3e7eb] dark:bg-primary/20 text-primary"
+                >
+                  <span class="text-2xl font-bold">02</span>
+                </div>
+                <span
+                  class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400"
+                  >Ngày</span
+                >
+              </div>
+              <div class="flex flex-col items-center gap-2">
+                <div
+                  class="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center rounded-lg bg-[#f3e7eb] dark:bg-primary/20 text-primary"
+                >
+                  <span class="text-2xl font-bold">14</span>
+                </div>
+                <span
+                  class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400"
+                  >Giờ</span
+                >
+              </div>
+              <div class="flex flex-col items-center gap-2">
+                <div
+                  class="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center rounded-lg bg-[#f3e7eb] dark:bg-primary/20 text-primary"
+                >
+                  <span class="text-2xl font-bold">30</span>
+                </div>
+                <span
+                  class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400"
+                  >Phút</span
+                >
+              </div>
+              <div class="flex flex-col items-center gap-2">
+                <div
+                  class="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center rounded-lg bg-[#f3e7eb] dark:bg-primary/20 text-primary"
+                >
+                  <span class="text-2xl font-bold">05</span>
+                </div>
+                <span
+                  class="text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400"
+                  >Giây</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Memories Gallery (Masonry) -->
+      <section
+        class="w-full px-4 md:px-10 py-12 flex justify-center bg-white dark:bg-[#1a0c10]"
+        id="memories"
+      >
+        <div class="max-w-[1200px] w-full flex flex-col gap-8">
+          <div class="flex flex-col items-center text-center gap-2">
+            <span
+              class="text-primary font-bold tracking-wider text-sm uppercase"
+              >Gallery</span
+            >
+            <h2 class="text-3xl md:text-4xl font-bold dark:text-white">
+              Những Khoảnh Khắc Đáng Nhớ
+            </h2>
+            <div class="w-16 h-1 bg-primary rounded-full mt-2"></div>
+          </div>
+          <!-- Masonry Layout using Columns -->
+          <div
+            class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4"
+          >
+            <!-- Item 1 -->
+            <div
+              class="break-inside-avoid relative group rounded-xl overflow-hidden cursor-pointer shadow-md"
+            >
+              <img
+                alt="Portrait of a girl smiling in soft light"
+                class="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-110"
+                data-alt="Portrait of a girl smiling in soft light"
+                src="../public/1.png"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-white text-3xl"
+                  >favorite</span
+                >
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="break-inside-avoid relative group rounded-xl overflow-hidden cursor-pointer shadow-md"
+            >
+              <img
+                alt="Friends laughing together at a cafe"
+                class="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-110"
+                data-alt="Friends laughing together at a cafe"
+                src="../public/2.png"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-white text-3xl"
+                  >favorite</span
+                >
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="break-inside-avoid relative group rounded-xl overflow-hidden cursor-pointer shadow-md"
+            >
+              <img
+                alt="Candid shot of girl walking in a park"
+                class="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-110"
+                data-alt="Candid shot of girl walking in a park"
+                src="../public/3.png"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-white text-3xl"
+                  >favorite</span
+                >
+              </div>
+            </div>
+            <!-- Item 4 (Tall) -->
+            <div
+              class="break-inside-avoid relative group rounded-xl overflow-hidden cursor-pointer shadow-md"
+            >
+              <img
+                alt="Fashion portrait looking stylish"
+                class="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-110"
+                data-alt="Fashion portrait looking stylish"
+                src="../public/4.png"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-white text-3xl"
+                  >favorite</span
+                >
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div
+              class="break-inside-avoid relative group rounded-xl overflow-hidden cursor-pointer shadow-md"
+            >
+              <img
+                alt="Close up of a girl holding a flower"
+                class="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-110"
+                data-alt="Close up of a girl holding a flower"
+                src="../public/5.jpg"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-white text-3xl"
+                  >favorite</span
+                >
+              </div>
+            </div>
+            <!-- Item 6 -->
+            <div
+              class="break-inside-avoid relative group rounded-xl overflow-hidden cursor-pointer shadow-md"
+            >
+              <img
+                alt="Silhouette against sunset"
+                class="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-110"
+                data-alt="Silhouette against sunset"
+                src="../public/6.jpg"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-white text-3xl"
+                  >favorite</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Wishes Section -->
+      <section
+        class="w-full px-4 md:px-10 py-16 flex justify-center bg-background-light dark:bg-background-dark"
+        id="wishes"
+      >
+        <div class="max-w-[1200px] w-full flex flex-col gap-10">
+          <div class="flex flex-col items-center text-center gap-2">
+            <span
+              class="text-primary font-bold tracking-wider text-sm uppercase"
+              >Wishes</span
+            >
+            <h2 class="text-3xl md:text-4xl font-bold dark:text-white">
+              Lời Chúc Yêu Thương
+            </h2>
+            <p class="text-gray-500 dark:text-gray-400 max-w-lg">
+              Những lời chúc tốt đẹp nhất gửi đến chị trong ngày đặc biệt này.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Wish Card 1 -->
+            <div
+              class="bg-white dark:bg-[#2d1b22] p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-[#f3e7eb] dark:border-gray-800 flex flex-col gap-4"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="size-12 rounded-full bg-cover bg-center"
+                  data-alt="Avatar of user Minh Hoang"
+                  style="background-image: url('../public/6.jpg')"
+                ></div>
+                <div>
+                  <h4 class="font-bold text-base dark:text-white">Hà Tuấn</h4>
+                  <span class="text-xs text-gray-400">Em của chị</span>
+                </div>
+                <span class="material-symbols-outlined text-primary ml-auto"
+                  >favorite</span
+                >
+              </div>
+              <p
+                class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm"
+              >
+                Chúc mừng sinh nhật chị Phương
+              </p>
+            </div>
+            <!-- Wish Card 2 -->
+            <div
+              class="bg-white dark:bg-[#2d1b22] p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-[#f3e7eb] dark:border-gray-800 flex flex-col gap-4"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="size-12 rounded-full bg-cover bg-center"
+                  data-alt="Avatar of user Lan Anh"
+                  style="background-image: url('../public/6.jpg')"
+                ></div>
+                <div>
+                  <h4 class="font-bold text-base dark:text-white">Lan Anh</h4>
+                  <span class="text-xs text-gray-400">Đồng nghiệp</span>
+                </div>
+                <span class="material-symbols-outlined text-primary ml-auto"
+                  >favorite</span
+                >
+              </div>
+              <p
+                class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm"
+              >
+                Good luck
+              </p>
+            </div>
+            <!-- Wish Card 3 -->
+            <div
+              class="bg-white dark:bg-[#2d1b22] p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-[#f3e7eb] dark:border-gray-800 flex flex-col gap-4 relative overflow-hidden"
+            >
+              <div class="absolute -right-4 -top-4 text-primary/10 rotate-12">
+                <span class="material-symbols-outlined text-9xl"
+                  >card_giftcard</span
+                >
+              </div>
+              <div class="flex items-center gap-4 relative z-10">
+                <div
+                  class="size-12 rounded-full bg-cover bg-center"
+                  data-alt="Avatar of user Tuan Kiet"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDm93_0eVfnOKYMFNuYNbnHiN5h7_Pt9Z8b_z8lSGLTOdBi8rB085AdWQgtU7gpbta0S7ToyM7w6oUMGrPAH5ei5EgRGwyEBcsMOmIxTTTaIjBW15gXCndHlEpeqt8jWskPj39oRVPjgw_nAwotFkkEw7sI1r6-SXQGcBjC3lvSbLiQNrauI-mQhwJHSCgnjSlBOQ2-6vqplSdNIeL6uqeaDNnVf7uBSVox3B1q_xP_-KlGdiOw5LMP3c2XrhWEqQonsL-qAfoG2L_b');
+                  "
+                ></div>
+                <div>
+                  <h4 class="font-bold text-base dark:text-white">Hà Tuấn</h4>
+                  <span class="text-xs text-gray-400">Crush của bạn?</span>
+                </div>
+                <span class="material-symbols-outlined text-primary ml-auto"
+                  >favorite</span
+                >
+              </div>
+              <p
+                class="text-gray-600 dark:text-gray-300 leading-relaxed text-sm relative z-10"
+              >
+                Chúc mừng sinh nhật chị nhé , chúc chị tuổi mới bình an , hạnh
+                phúc ✨"
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-center mt-4">
+            <button
+              class="flex items-center justify-center gap-2 rounded-lg px-6 py-3 bg-white dark:bg-[#2d1b22] border border-[#f3e7eb] dark:border-gray-700 text-sm font-bold text-primary hover:bg-[#fcf8f9] dark:hover:bg-black/20 transition-colors"
+            >
+              <span class="material-symbols-outlined text-lg">edit</span>
+              Gửi lời chúc của bạn
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Surprise CTA -->
+      <section
+        class="w-full px-4 md:px-10 py-16 flex justify-center bg-primary text-white relative overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"
+        ></div>
+        <div
+          class="max-w-2xl w-full text-center relative z-10 flex flex-col items-center gap-6"
+        >
+          <div
+            class="size-16 rounded-full bg-white/20 flex items-center justify-center mb-2 backdrop-blur-md"
+          >
+            <span class="material-symbols-outlined text-4xl">redeem</span>
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold font-script">
+            Món quà bí mật đang chờ!
+          </h2>
+          <p class="text-white/90 text-lg">Em thích chị</p>
+          <button
+            class="mt-4 flex items-center gap-2 h-14 px-8 rounded-full bg-white text-primary text-lg font-bold shadow-2xl hover:bg-gray-50 hover:scale-105 transition-all"
+          >
+            <span>Mở Quà Ngay</span>
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer
+        class="w-full py-8 bg-white dark:bg-[#150a0d] border-t border-[#f3e7eb] dark:border-gray-800"
+      >
+        <div
+          class="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4"
+        >
+          <div class="flex items-center gap-2 text-[#1b0d12] dark:text-white">
+            <span class="material-symbols-outlined text-primary">cake</span>
+            <span class="font-bold">HPBD Nguyễn Thị Hải Phương</span>
+          </div>
+          <p class="text-sm text-gray-500 flex items-center gap-1">
+            Made with
+            <span class="material-symbols-outlined text-primary text-sm"
+              >favorite</span
+            >
+            by Hà Tuấn
+          </p>
+          <div class="flex gap-4">
+            <a
+              class="text-gray-400 hover:text-primary transition-colors"
+              href="#"
+            >
+              <span class="material-symbols-outlined">music_note</span>
+            </a>
+            <a
+              class="text-gray-400 hover:text-primary transition-colors"
+              href="#"
+            >
+              <span class="material-symbols-outlined">photo_library</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
